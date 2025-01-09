@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遥控小车的遥控器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .remote_control {
+            position: relative;
+            width: 260px;
+            height: 500px;
+            background-color: gray;
+        }
+
+        .image_top {
+            position: absolute;
+            width: 170px;
+            height: 80px;
+            left: 30px;
+            top: 30px;
+            background-color: blue;
+        }
+
+        .toward_top {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 100px;
+            top: 140px;
+            background-color: gray;
+            box-shadow: 10px 10px 13px 5px black
+        }
+
+        .toward_down {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 100px;
+            top: 260px;
+            background-color: gray;
+            box-shadow: 10px 10px 13px 5px black
+        }
+
+        .toward_left {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 50px;
+            top: 200px;
+            background-color: gray;
+            box-shadow: 10px 10px 13px 5px black
+        }
+
+        .toward_right {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 150px;
+            top: 200px;
+            background-color: gray;
+            box-shadow: 10px 10px 13px 5px black
+        }
+
+        .toward_middle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 100px;
+            top: 200px;
+            background-color: gray;
+            box-shadow: 10px 10px 13px 5px black
+        }
+
+        .velocity_add {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 30px;
+            top: 350px;
+            background-color: gray;
+            box-shadow: 10px 10px 13px 5px black
+        }
+
+        .velocity_minus {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 30px;
+            top: 430px;
+            background-color: gray;
+            box-shadow: 10px 10px 13px 5px black
+        }
+
+        .rotate_left {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 170px;
+            top: 430px;
+            background-color: gray;
+            box-shadow: 10px 10px 13px 5px black
+        }
+
+        .rotate_right {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 170px;
+            top: 350px;
+            background-color: gray;
+            box-shadow: 10px 10px 13px 5px black
+        }
+    </style>
+</head>
+
+<body>
+    <div class="remote_control">
+        <div class="image_top"></div>
+        <div class="toward_top">上</div>
+        <div class="toward_left">左</div>
+        <div class="toward_down">下</div>
+        <div class="toward_right">右</div>
+        <div class="toward_middle">中</div>
+        <div class="velocity_add">加</div>
+        <div class="velocity_minus">减</div>
+        <div class="rotate_left">左</div>
+        <div class="rotate_right">右</div>
+    </div>
+</body>
+
+</html>
