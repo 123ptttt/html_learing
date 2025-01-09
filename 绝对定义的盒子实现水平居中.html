@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位的盒子实现水平居中</title>
+    <style>
+        /* 加了定位的盒子不能通过margin实现水平居中 */
+        .box {
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS优先级</title>
+    <!-- 1，继承或者时通配符权重为1 -->
+    <!-- 元素选择器权重为2 -->
+    <!-- 类选择器， 伪类选择器的权重为3 -->
+    <!-- ID选择器权重为4 -->
+    <!-- 行内选择器权重为5 -->
+    <!-- !important权重为无穷大 -->
+    <style>
+        .test {
+            color: red;
+        }
+
+        div {
+            color: pink !important;
+        }
+
+        #demo {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test" id="demo" style="color: purple;">你笑起来真好看</div>
+</body>
+
+</html>

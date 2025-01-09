@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位堆叠顺序</title>
+    <!-- z-index越大优先级越高 -->
+    <!-- 如果优先级相同，后来居上 -->
+    <!-- 只有定义的盒子才可以有z-index -->
+    <style>
+        .box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .xiongda {
+            z-index: 1;
+            background-color: rebeccapurple;
+        }
+
+        .xionger {
+            z-index: 2;
+            background-color: green;
+            left: 50px;
+            top: 50px;
+        }
+
+        .qiangge {
+            background-color: blue;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box xiongda">熊大</div>
+    <div class="box xionger">熊二</div>
+    <div class="box qiangge">光头强</div>
+</body>
+
+</html>

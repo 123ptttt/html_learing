@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粘性定位</title>
+    <!-- 1，以可视窗口作为参考来移动元素 -->
+    <!-- 占有原来的位置 -->
+    <!-- 必须添加top，bottom，left，right其中一个才有效 -->
+    <style>
+        .body {
+            height: 30000px;
+        }
+
+        .nav {
+            position: sticky;
+            top: 0;
+            width: 800px;
+            height: 50px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">你走后乱了四季</div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的特殊属性</title>
+    <!-- 1，行内元素如果加了绝对定位，固定定位或者是浮动，都可以调节宽度和高度 -->
+    <!-- 块级元素加了绝对或固定定位的话，不给宽高，就默认为内容的大小 -->
+    <!-- 不会触发外边距合并的问题 -->
+    <style>
+        span {
+            position: absolute;
+            width: 200px;
+            height: 150px;
+            background-color: pink;
+        }
+
+        div {
+            position: absolute;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <span>123</span>
+    <div>abcd</div>
+</body>
+
+</html>

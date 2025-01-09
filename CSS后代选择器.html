@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之后代选择器</title>
+    <style>
+        /* 把ol里面的li选择出来 */
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            color: red;
+        }
+
+        .nav li a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>woshiol</li>
+        <li></li>
+        <li><a href="#">我是人</a></li>
+    </ol>
+    <ul>
+        <li>woshi ul</li>
+        <li>woshi ul</li>
+        <li>woshi ul</li>
+    </ul>
+    <ul class="nav">
+        <li>woshi ul</li>
+        <li>woshi ul</li>
+        <li>woshi ul</li>
+        <li><a href="#">变黄色</a></li>
+    </ul>
+</body>
+
+</html>
